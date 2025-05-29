@@ -54,8 +54,12 @@ int Multiplicacion (int a,int b){
 
 void Division (int a,int b){
 	int Div;
-	Div=a/b;
-	
-	cout<<"\nLa divicion de "<<a<<"/"<<b<<" es: "<<Div;
-	
+
+	if(b==0){
+		cout<<"\nError: La division entre 0 no existe";
+	}
+	else{
+		Div=a/b;	
+		cout<<"\nLa division de "<<a<<"/"<<b<<" es: "<<Div;
+	}
 }
