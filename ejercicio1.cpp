@@ -7,8 +7,12 @@ int main(){
 	cout<<"Ingrese la base del triangulo: ";
 	cin>>base;
 	
-	Triangulo(base);
-	
+	if(base>=0){
+		Triangulo(base);
+	}
+	else{
+		cout<<"el triangulo no existe";
+	}
 	return 0;
 }
 
