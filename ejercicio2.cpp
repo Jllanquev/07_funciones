@@ -1,16 +1,16 @@
 #include <iostream>
 using namespace std;
 
-int Suma (int a,int b);
+float Suma (float a,float b);
 
-void Resta (int a, int b);
+void Resta (float a, float b);
 
-int Multiplicacion (int a, int b);
+float Multiplicacion (float a,float b);
 
-void Division (int a, int b);
+void Division (float a,float b);
 
 int main(){
-	int num1,num2,producto,suma;
+	float num1,num2,producto,suma;
 	cout<<"************************************************************"<<endl;
 	cout<<"                        CALCULADORA                                 ";
 	cout<<"\n************************************************************"<<endl;
@@ -41,29 +41,29 @@ int main(){
 	return 0;
 }
 
-int Suma (int a,int b){
-	int Adicion;
+float Suma (float a,float b){
+	float Adicion;
 	Adicion= a+b;
 	
 	return Adicion; 
 }
 
-void Resta (int a, int b){
-	int Sustraccion;
+void Resta (float a,float b){
+	float Sustraccion;
 	Sustraccion= a-b;
 	 
 	 cout<<"\nLa resta de "<<a<<" - "<<b<<" es: "<<Sustraccion;
 }
 
-int Multiplicacion (int a,int b){
-	int Producto;
+float Multiplicacion (float a,float b){
+	float Producto;
 	Producto=a*b;
 	
 	return Producto;
 }
 
-void Division (int a,int b){
-	int Div;
+void Division (float a,float b){
+	float Div;
 
 	if(b==0){
 		cout<<"\nError: La division entre 0 no existe";
