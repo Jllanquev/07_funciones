@@ -3,16 +3,20 @@ using namespace std;
 
 int Primo (int a);
 
+int positivo (int num);
+
 int main(){
-	int num;
+	int num,Positivo;
 	cout<<"Ingrese un numero entero positivo: ";
 	cin>>num;
 	
-	if(Primo(num)==2){
-		cout<<"El numero "<<num<<" es primo";
+	Positivo=positivo(num);
+	
+	if(Primo(Positivo)==2){
+		cout<<"El numero "<<Positivo<<" es primo";
 	}
 	else{
-		cout<<"El numero "<<num<<" no es primo";
+		cout<<"El numero "<<Positivo<<" no es primo";
 		
 	}
 	
@@ -31,4 +35,13 @@ int Primo (int a){
 	return suma;
 }
 
+int positivo (int num){
 
+
+	while(num<0){
+		cout<<"Ingrese un numero positivo: ";
+		cin>>num;
+	}
+	
+	return num;
+}
