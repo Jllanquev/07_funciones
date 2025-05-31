@@ -9,10 +9,15 @@ int main(){
 	cin>>m;
 	cout<<"Ingrese el valor de n: ";
 	cin>>n;
+	if(m>=0&&n>=0){
+		combinatorio=Factorial(m)/(Factorial(m-n)*Factorial(n));
 	
-	combinatorio=Factorial(m)/(Factorial(m-n)*Factorial(n));
-	
-	cout<<"El combinatorio de "<<m<<" sobre "<<n<<" es: "<<combinatorio;
+		cout<<"El combinatorio de "<<m<<" sobre "<<n<<" es: "<<combinatorio;		
+	}
+	else{
+		cout<<"m y n deben ser numeros positivos o iguales que cero";
+	}
+
 	
 	return 0;
 }
