@@ -3,6 +3,8 @@ using namespace std;
 
 int Factorial (int m);
 
+void Positivo (int m,int n);
+
 int main(){
 	int m,n,combinatorio;
 	cout<<"Ingrese el valor de m: ";
@@ -16,9 +18,11 @@ int main(){
 	}
 	else{
 		cout<<"m y n deben ser numeros positivos o iguales que cero";
+		
+		Positivo(m,n);
 	}
-
 	
+
 	return 0;
 }
 
@@ -30,4 +34,20 @@ int Factorial (int m){
 		F=F*i;
 	}
 	return F;
+}
+
+void Positivo (int m,int n){
+	int Combinatorio;
+	
+	while(m<0||n<0){
+		cout<<"\nIngrese un numero positivo para m: ";
+		cin>>m;
+		cout<<"Ingrese un numero postivo para n: ";
+		cin>>n;	
+	}
+	
+	Combinatorio=Factorial(m)/(Factorial(m-n)*Factorial(n));
+	
+	cout<<"El combinatorio de "<<m<<" sobre "<<n<<" es: "<<Combinatorio;	
+	
 }
