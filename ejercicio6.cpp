@@ -9,7 +9,12 @@ int main(){
 	cout<<"Ingrese la cantidad de terminos para la serie Fibonacci: ";
 	cin>>cant;
 	
-	Fibonacci (cant);
+	if(cant>0){
+		Fibonacci (cant);
+	}
+	else{
+		cout<<"Error: Ponga correctamente la cantidad de terminos.";
+	}
 	
 	return 0;
 }
