@@ -11,14 +11,17 @@ int main(){
 	cin>>num1;
 	cout<<"Ingrese el segundo numero: ";
 	cin>>num2;
-	
-	Mcd=MaxComunDiv(num1,num2);
-	Mcm=MinComunMult(num1,num2);
-	cout<<"El MCD de "<<num1<<" y "<<num2<<" es: ";
-	cout<<Mcd<<endl;
-	cout<<"El MCM de "<<num1<<" y "<<num2<<" es: ";
-	cout<<Mcm;
-	
+	if(num1<=0||num2<=0){
+		cout<<"Error: Los numeros deben ser mayores que cero.";
+	}
+	else{
+		Mcd=MaxComunDiv(num1,num2);
+		Mcm=MinComunMult(num1,num2);
+		cout<<"El MCD de "<<num1<<" y "<<num2<<" es: ";
+		cout<<Mcd<<endl;
+		cout<<"El MCM de "<<num1<<" y "<<num2<<" es: ";
+		cout<<Mcm;
+	}
 	return 0;
 }
 
