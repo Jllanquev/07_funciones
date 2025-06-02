@@ -8,11 +8,16 @@ int main(){
 	cout<<"Ingrese un numero: ";
 	cin>>num;
 	
-	if(Numperf (num)==num){
-		cout<<num<<" es un numero perfecto.";
+	if(num>0){
+		if(Numperf (num)==num){
+			cout<<num<<" es un numero perfecto.";
+		}
+		else{
+			cout<<num<<" no es un numero perfecto.";
+		}
 	}
 	else{
-		cout<<num<<" no es un numero perfecto.";
+		cout<<"ERROR: Ingrese un numero que sea mayor que cero.";
 	}
 }
 
