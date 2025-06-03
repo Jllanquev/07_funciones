@@ -11,10 +11,21 @@ int main(){
 	cout<<"Ingrese el valor de n: ";
 	cin>>n;
 	
-	float Suma=suma(n);
+	if(n>0){
+		float Suma=suma(n);
 	
-	cout<<"La suma es: "<<Suma;
+		cout<<"La suma es: "<<Suma;
+	}
+	else{
+		cout<<"ERROR: Ingrese un valor para n que sea mayor que cero.";
+		while(n<=0){
+			cout<<"\nIngrese nuevamente el valor de n: ";
+			cin>>n;
+		}
+			float Suma=suma(n);
 	
+			cout<<"La suma es: "<<Suma;		
+	}
 	return 0;
 }
 
